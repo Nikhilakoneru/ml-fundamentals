@@ -29,3 +29,4 @@ Accuracy = 97.4% | ROC AUC = 0.9974
 
 ![Confusion Matrix](plots/confusion_matrix.png)
 ![ROC Curve](plots/roc_curve.png)
+![Top Features](plots/log_reg_feature_importance.png)
