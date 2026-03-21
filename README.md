@@ -9,6 +9,7 @@ Working through core ML algorithms on real datasets to build a strong foundation
 | 01 | Linear Regression | California Housing | R² = 0.58 |
 | 02 | Logistic Regression | Breast Cancer | Accuracy = 97%, AUC = 0.99 |
 | 03 | Decision Tree | Breast Cancer + Calif. Housing | Acc = 95.6%, R² = 0.62 | 
+| 04 | Random Forest | Breast Cancer + Calif. Housing | Acc = 96.5%, R² = 0.81 |
 
 ## 01 - Linear Regression
 
@@ -43,3 +44,13 @@ Classification Accuracy = 95.6% | Regression R² = 0.62 (better than linear regr
 ![Depth vs Accuracy](plots/dt_depth_vs_accuracy.png)
 ![Tree Visualization](plots/dt_tree_visualization.png)
 ![Regression Actual vs Predicted](plots/dt_regression_actual_vs_pred.png) 
+
+## 04 - Random Forest
+
+Multiple trees voting together instead of just one. 
+Accuracy went up slightly on classification but the big jump was in regression - R² went from 0.58 (linear) to 0.62 (single tree) to 0.81 (random forest). 
+Also tested different numbers of trees and it flattens out around 100.
+
+![Number of Trees](plots/rf_n_trees_vs_accuracy.png)
+![Feature Importance](plots/rf_feature_importance.png)
+![Regression Actual vs Predicted](plots/rf_regression_actual_vs_pred.png) 
