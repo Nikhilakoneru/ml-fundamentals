@@ -10,6 +10,7 @@ Working through core ML algorithms on real datasets to build a strong foundation
 | 02 | Logistic Regression | Breast Cancer | Accuracy = 97%, AUC = 0.99 |
 | 03 | Decision Tree | Breast Cancer + Calif. Housing | Acc = 95.6%, R² = 0.62 | 
 | 04 | Random Forest | Breast Cancer + Calif. Housing | Acc = 96.5%, R² = 0.81 |
+| 05 | KNN | Breast Cancer | Accuracy = 96.5% |
 
 ## 01 - Linear Regression
 
@@ -54,3 +55,12 @@ Also tested different numbers of trees and it flattens out around 100.
 ![Number of Trees](plots/rf_n_trees_vs_accuracy.png)
 ![Feature Importance](plots/rf_feature_importance.png)
 ![Regression Actual vs Predicted](plots/rf_regression_actual_vs_pred.png) 
+
+## 05 - KNN
+
+Predicts based on closest neighbors so scaling is a must. 
+Tested k from 1 to 25 and also ran it with and without scaling to prove it actually matters. 
+K=1 overfits because it just memorizes, higher k smooths things out.
+
+![K vs Accuracy](plots/knn_k_vs_accuracy.png)
+![Scaling Comparison](plots/knn_scaling_comparison.png)
