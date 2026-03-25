@@ -11,6 +11,7 @@ Working through core ML algorithms on real datasets to build a strong foundation
 | 03 | Decision Tree | Breast Cancer + Calif. Housing | Acc = 95.6%, R² = 0.62 | 
 | 04 | Random Forest | Breast Cancer + Calif. Housing | Acc = 96.5%, R² = 0.81 |
 | 05 | KNN | Breast Cancer | Accuracy = 96.5% |
+| 06 | Naive Bayes | Breast Cancer | Accuracy = 94.7% |
 
 ## 01 - Linear Regression
 
@@ -64,3 +65,13 @@ K=1 overfits because it just memorizes, higher k smooths things out.
 
 ![K vs Accuracy](plots/knn_k_vs_accuracy.png)
 ![Scaling Comparison](plots/knn_scaling_comparison.png)
+
+## 06 - Naive Bayes
+
+Simplest model so far - no hyperparameters to tune at all. 
+Assumes features are independent which isn't really true but it still works okay. Not the best accuracy but trains instantly and barely overfits. 
+Also made a comparison chart of all 5 classification models side by side.
+
+![ROC Curve](plots/nb_roc_curve.png)
+![All Models Comparison](plots/all_models_comparison.png)
+
