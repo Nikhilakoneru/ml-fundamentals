@@ -13,6 +13,7 @@ Working through core ML algorithms on real datasets to build a strong foundation
 | 05 | KNN | Breast Cancer | Accuracy = 96.5% |
 | 06 | Naive Bayes | Breast Cancer | Accuracy = 94.7% |
 | 07 | K-Means | Iris | Silhouette = 0.46 |
+| 08 | PCA | Breast Cancer | 95% variance in 10 components |
 
 ## 01 - Linear Regression
 
@@ -85,4 +86,15 @@ Compared the clusters to actual iris species and they matched up pretty closely 
 ![Elbow Method](plots/kmeans_elbow.png)
 ![Clusters](plots/kmeans_clusters.png)
 ![Actual Species](plots/kmeans_actual_species.png)
+
+## 08 - PCA
+
+30 features is a lot so tried reducing them with PCA.
+Turns out you only need about 10 components to keep 95% of the information. 
+Trained logistic regression with different numbers of components and accuracy barely dropped even with way fewer features. 
+The 2D scatter plot shows the two classes separate pretty well with just 2 components.
+
+![Variance Explained](plots/pca_variance_explained.png)
+![2D Scatter](plots/pca_2d_scatter.png)
+![Components vs Accuracy](plots/pca_components_vs_accuracy.png)
 
