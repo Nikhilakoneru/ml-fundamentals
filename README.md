@@ -12,6 +12,7 @@ Working through core ML algorithms on real datasets to build a strong foundation
 | 04 | Random Forest | Breast Cancer + Calif. Housing | Acc = 96.5%, R² = 0.81 |
 | 05 | KNN | Breast Cancer | Accuracy = 96.5% |
 | 06 | Naive Bayes | Breast Cancer | Accuracy = 94.7% |
+| 07 | K-Means | Iris | Silhouette = 0.46 |
 
 ## 01 - Linear Regression
 
@@ -74,4 +75,14 @@ Also made a comparison chart of all 5 classification models side by side.
 
 ![ROC Curve](plots/nb_roc_curve.png)
 ![All Models Comparison](plots/all_models_comparison.png)
+
+## 07 - K-Means Clustering
+
+First unsupervised algorithm - no labels, model finds groups on its own. 
+Used the elbow method and silhouette scores to figure out k=3 is the right number of clusters. 
+Compared the clusters to actual iris species and they matched up pretty closely which was cool to see.
+
+![Elbow Method](plots/kmeans_elbow.png)
+![Clusters](plots/kmeans_clusters.png)
+![Actual Species](plots/kmeans_actual_species.png)
 
