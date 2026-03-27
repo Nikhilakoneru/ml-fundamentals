@@ -104,6 +104,6 @@ for bar, val in zip(bars, accuracies):
 plt.tight_layout()
 plt.savefig('plots/all_models_comparison.png', dpi=150)
 plt.show()
-# cool to see them all side by side
+
 
 print("\nDone!")
